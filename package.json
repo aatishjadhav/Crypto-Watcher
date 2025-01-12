@@ -26,12 +26,18 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "npm install --dev && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postinstall": "npm install react-scripts"
-  },
+  "preinstall": "npx npm-force-resolutions",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+"resolutions": {
+  "react": "^17.0.2",
+  "react-dom": "^17.0.2",
+  "react-html-parser": "2.0.2"
+},
+
   "eslintConfig": {
     "extends": [
       "react-app",
